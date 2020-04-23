@@ -1,0 +1,6 @@
+/**
+ * Generated bundle index. Do not edit.
+ */
+export * from './public-api';
+export { LOCATION_CONFIG as ɵa } from './lib/location/location-config.token';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2FtcGxlLWxpYnJhcnkuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9zYW1wbGUtbGlicmFyeS8iLCJzb3VyY2VzIjpbInNhbXBsZS1saWJyYXJ5LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyxjQUFjLENBQUM7QUFFN0IsT0FBTyxFQUFDLGVBQWUsSUFBSSxFQUFFLEVBQUMsTUFBTSxzQ0FBc0MsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogR2VuZXJhdGVkIGJ1bmRsZSBpbmRleC4gRG8gbm90IGVkaXQuXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9wdWJsaWMtYXBpJztcblxuZXhwb3J0IHtMT0NBVElPTl9DT05GSUcgYXMgybVhfSBmcm9tICcuL2xpYi9sb2NhdGlvbi9sb2NhdGlvbi1jb25maWcudG9rZW4nOyJdfQ==
