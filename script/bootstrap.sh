@@ -1,5 +1,7 @@
 set -e
 
+echo "==> Bootstrapping"
+
 cd "$(dirname "$0")/.."
 
 echo "==> Checking if NPM is available"
@@ -9,7 +11,7 @@ if ! [ -x "$(command -v npm)" ]; then
     exit 1
 fi
 
-echo "==> Checking if Angular CLI is available"
+echo "1. Checking if Angular CLI is available"
 
 if ! [ -x "$(command -v ng v)" ]; then
     echo "Installing Angular CLI via NPM."
@@ -19,30 +21,17 @@ if ! [ -x "$(command -v ng v)" ]; then
     exit 1
 fi
 
-echo "==> Linking SampleLibrary to SampleApp"
+echo "2. Buildling SampleLibrary"
 
 cd "SampleLibrary"
+npm install
+ng build
+cd "./dist/sample-library"
 npm link
-cd "../SampleApp"
+
+echo "3. Building SampleApp"
+
+cd "../../../SampleApp"
+npm install
 npm link sample-library
-
-cd "../"
-
-echo "==> Buildling  SampleLibrary"
-
-cd "SampleLibrary"
-npm install
-npm audit fix
-ng build --prod
-
-cd "../"
-
-echo "==> Building SampleApp"
-
-cd "SampleApp"
-npm install
-npm audit fix
-
-cd "../"
-
-echo "==> Done boostrapping"
+ng build

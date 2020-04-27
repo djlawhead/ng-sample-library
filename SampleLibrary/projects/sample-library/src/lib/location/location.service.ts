@@ -10,7 +10,7 @@ export class LocationService {
   constructor(@Inject(LOCATION_CONFIG) private config, private http: HttpClient) {
   }
 
-  getAddressDetails(address: string): Observable<LocationSearchResult> {
+  getAddressDetails(address: string): Observable<LocationSearchResult[]> {
     const addressDetailsEndpoint = new URL('/search', this.config.serviceUri).toString();
     const params = new HttpParams()
       .set('q', encodeURI(address))
@@ -19,7 +19,7 @@ export class LocationService {
       .append('limit', this.config.limit)
       .append('addressDetails', (this.config.showAddressDetails ? 1 : 0).toString());
     console.log(params.toString());
-    return this.http.get<LocationSearchResult>(
+    return this.http.get<LocationSearchResult[]>(
       addressDetailsEndpoint + `?q=${encodeURI(address)}&format=json`,
       {
         responseType: 'json'

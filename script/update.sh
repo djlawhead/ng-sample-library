@@ -2,8 +2,6 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-echo "==> Checking for updates"
+echo "==> Updating"
 
 script/bootstrap.sh
-
-echo "==> Done update"

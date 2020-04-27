@@ -1,7 +1,0 @@
-var Address = /** @class */ (function () {
-    function Address() {
-    }
-    return Address;
-}());
-export { Address };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWRkcmVzcy5qcyIsInNvdXJjZVJvb3QiOiJuZzovL3NhbXBsZS1saWJyYXJ5LyIsInNvdXJjZXMiOlsibGliL2xvY2F0aW9uL2FkZHJlc3MudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFBQTtJQVdBLENBQUM7SUFBRCxjQUFDO0FBQUQsQ0FBQyxBQVhELElBV0MiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgY2xhc3MgQWRkcmVzcyB7XHJcbiAgY2l0eTogc3RyaW5nO1xyXG4gIGNvdW50cnk6IHN0cmluZztcclxuICBjb3VudHJ5Q29kZTogc3RyaW5nO1xyXG4gIGNvdW50eTogc3RyaW5nO1xyXG4gIGhvdXNlTnVtYmVyOiBudW1iZXI7XHJcbiAgbmVpZ2hib3VyaG9vZDogc3RyaW5nO1xyXG4gIHBvc3Rjb2RlOiBudW1iZXI7XHJcbiAgcm9hZDogc3RyaW5nO1xyXG4gIHN0YXRlOiBzdHJpbmc7XHJcbiAgc3VidXJiOiBzdHJpbmc7XHJcbn1cclxuIl19

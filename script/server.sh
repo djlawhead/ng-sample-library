@@ -1,6 +1,6 @@
 set -e
 
-echo "==> Starting SampleApp"
+echo "==> Starting server"
 
 cd "$(dirname "$0")/.."
 
